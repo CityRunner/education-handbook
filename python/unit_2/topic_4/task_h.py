@@ -15,3 +15,18 @@
 # Требуется вывести имя победителя. Если два ребенка назвали числа с
 # одинаковой суммой цифр, победителем должен быть признан тот, кто ходил позже.
 
+
+max_number = 0
+max_name = ''
+
+for count in range(int(input())):
+    name = input()
+    number = input()
+    summ = 0
+    for digit in number:
+        summ += int(digit)
+    if summ >= max_number:
+        max_number = summ
+        max_name = name
+
+print(max_name)
