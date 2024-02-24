@@ -14,56 +14,19 @@
 # Самый распространённый способ поиска НОД — Алгоритм Евклида.
 
 
-def is_prime(input_number):
-    if (current_number := input_number) > 1:
-        for divider in range(2, int(current_number ** 0.5) + 1):
-            if current_number % divider == 0:
-                return False
-    else:
-        return False
-    return True
+def gcd(a, b):
+    while (R := a % b) > 0:
+        a = b
+        b = R
+    return b
 
 
-def prime_dividers(number):
-    dividers = []
-    current_divider = 2
-    if number > 1 and not is_prime(number):
-        while not is_prime(number):
-            if number % current_divider == 0:
-                number = int(number / current_divider)
-                dividers.append(current_divider)
-            else:
-                while not is_prime(current_divider := current_divider + 1):
-                    pass
-        dividers.append(number)
-    else:
-        dividers.append(number)
-    return dividers
+numbers = []
+for count in range(int(input())):
+    numbers.append(int(input()))
 
-
-flag = True
-result = 1
-p_lists = list()
-
-for i in range(count := int(input())):
-    number = int(input())
-    p_lists.append(list(set(prime_dividers(number))))
-# print(p_lists)
-
-for p_list in range(len(p_lists) - 1):
-    for p_current in range(len(p_lists[p_list])):
-        for p_next in range(len(p_lists[p_list + 1])):
-            if p_lists[p_list][p_current] == p_lists[p_list + 1][p_next]:
-                # print(f'''
-                #       p_lists[{p_list}][{p_current}] ==
-                #       p_lists[{p_list+1}][{p_next}]
-                #     ''')
-                p_lists[p_list + 1][p_next] = 0
-                result *= p_lists[p_list][p_current]
+result = numbers[0]
+for number in numbers:
+    result = gcd(result, number)
 
 print(result)
-
-
-
-
-
