@@ -3,8 +3,8 @@
 https://education.yandex.ru/handbook/python
 
 1. :suspect: Введение
-    1. Как устроен хендбук
-    2. Введение
+    1. ~~Как устроен хендбук~~
+    2. ~~Введение~~
 2. :rage1: Базовые конструкции Python
     1. [Ввод и вывод данных. Операции с числами, строками. Форматирование](https://github.com/CityRunner/education-handbook/tree/main/python/unit_2/topic_1)
     2. [Условный оператор](https://github.com/CityRunner/education-handbook/tree/main/python/unit_2/topic_2)
