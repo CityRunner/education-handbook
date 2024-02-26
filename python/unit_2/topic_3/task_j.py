@@ -23,18 +23,18 @@
 # Два целых числа — координаты конечной точки маршрута.
 
 
-coord = [0, 0]
+x, y = 0, 0
 
 while (command := input()) != 'СТОП':
     match command:
         case 'ВОСТОК':
-            coord[0] += int(input())
+            x += int(input())
         case 'ЗАПАД':
-            coord[0] -= int(input())
+            x -= int(input())
         case 'СЕВЕР':
-            coord[1] += int(input())
+            y += int(input())
         case 'ЮГ':
-            coord[1] -= int(input())
-    print(coord)
-#В задании ошибка - вывод проверяется в обратном порядке - YX
-print(f'{coord[1]}\n{coord[0]}')
+            y -= int(input())
+
+# В задании ошибка - вывод проверяется в обратном порядке - YX
+print(f'{y}\n{x}')

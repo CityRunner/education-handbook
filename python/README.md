@@ -11,7 +11,7 @@ https://education.yandex.ru/handbook/python
     3. [Циклы](https://github.com/CityRunner/education-handbook/tree/main/python/unit_2/topic_3)
     4. [Вложенные циклы](https://github.com/CityRunner/education-handbook/tree/main/python/unit_2/topic_4)
 3. :rage2: Коллекции и работа с памятью
-    1. Строки, кортежи, списки
+    1. [Строки, кортежи, списки](https://github.com/CityRunner/education-handbook/tree/main/python/unit_3/topic_1)
     2. Множества, словари
     3. Списочные выражения. Модель памяти для типов языка Python
     4. Встроенные возможности по работе с коллекциями
