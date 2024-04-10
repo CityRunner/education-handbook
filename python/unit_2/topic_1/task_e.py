@@ -21,6 +21,6 @@ for i in cart:
     cart[i] = int(input())
 
 total_cost = cart["price"] * cart["amount"]
-change = cart["cash"] - int(total_cost)
+change = cart["cash"] - total_cost
 
 print(change)
