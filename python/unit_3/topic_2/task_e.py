@@ -14,18 +14,16 @@
 
 
 N, M = int(input()), int(input())
-count = 0
 none = 'Таких нет'
 NMs = set()
 
 for _ in range(N + M):
     if (name := input()) in NMs:
-        count -= 1
+        NMs.remove(name)
     else:
-        count += 1
         NMs.add(name)
 
-if count > 0:
-    print(count)
+if (porridge_eaters := len(NMs)) > 0:
+    print(porridge_eaters)
 else:
     print(none)
