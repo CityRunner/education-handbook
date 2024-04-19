@@ -13,9 +13,5 @@
 # Во второй строке — приветствие пользователя: «Привет, %username%».
 
 
-username = None
-
-while not username:
-    username = input(f'Как Вас зовут?\n')
-
+username = input(f'Как Вас зовут?')
 print(f'Привет, {username}')
