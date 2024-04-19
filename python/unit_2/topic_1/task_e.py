@@ -13,14 +13,9 @@
 # Одно целое число — сдача, которую требуется отдать пользователю
 
 
-cart = {"price": int(),
-        "amount": int(),
-        "cash": int()}
-
-for i in cart:
-    cart[i] = int(input())
-
-total_cost = cart["price"] * cart["amount"]
-change = cart["cash"] - total_cost
-
+price = int(input())
+amount = int(input())
+cash = int(input())
+total_cost = price * amount
+change = cash - total_cost
 print(change)

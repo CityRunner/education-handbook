@@ -10,7 +10,5 @@
 # NN строк с фразой: "Купи слона!"
 
 
-while (repeat := int(input())) <= 0:
-
-for count in range(repeat):
+for _ in range(int(input())):
     print("Купи слона!")

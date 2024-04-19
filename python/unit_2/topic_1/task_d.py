@@ -14,9 +14,7 @@
 
 price = 38
 amount = 2.5
-cash = 0
-while cash < 100:
-    cash = int(input())
+cash = int(input())
 total_cost = price * amount
 change = cash - total_cost
 print(int(change))

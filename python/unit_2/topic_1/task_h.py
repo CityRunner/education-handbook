@@ -14,5 +14,5 @@
 repeat = int(input())
 message = input()
 
-for count in range(repeat):
+for _ in range(repeat):
     print(f'Я больше никогда не буду писать "{message}"!')

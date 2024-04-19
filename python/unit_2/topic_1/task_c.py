@@ -10,10 +10,6 @@
 # Трижды повторённая весьма полезная информация.
 
 
-string = None
-
-while not string:
-    string = input()
-
-for count in range(3):
+string = input()
+for _ in range(3):
     print(string)

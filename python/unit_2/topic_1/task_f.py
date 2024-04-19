@@ -17,19 +17,13 @@
 # Сдача: <сдача>руб
 
 
-cart = {"name": str(),
-        "price": int(),
-        "amount": int(),
-        "cash": int()}
+name = input()
+price = int(input())
+amount = int(input())
+cash = int(input())
 
-for i in cart:
-    cart[i] = input()
+total_cost = price * amount
+change = cash - total_cost
 
-total_cost = int(cart["price"]) * int(cart["amount"])
-change = int(cart["cash"]) - int(total_cost)
-
-print(f"""Чек
-{cart["name"]} - {cart["amount"]}кг - {cart["price"]}руб/кг
-Итого: {total_cost}руб
-Внесено: {cart["cash"]}руб
-Сдача: {change}руб""")
+print(f'''Чек\n{name} - {amount}кг - {price}руб/кг
+Итого: {total_cost}руб\nВнесено: {cash}руб\nСдача: {change}руб''')
