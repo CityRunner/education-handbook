@@ -16,9 +16,8 @@
 # Красивый пьедестал (ширина ступеней 8 символов).
 
 
-substring = 8 * ' '
 places = []
-racers = ["  Петя  ", "  Вася  ", "  Толя  "]
+racers = ['  Петя  ', '  Вася  ', '  Толя  ']
 speed = [int(), int(), int()]
 
 for index in range(len(speed)):
@@ -37,7 +36,5 @@ while speed and len(places) < 2:
     racers.pop(racer_id)
 places.append(racers[0])
 
-print(f"""{substring}{places[0]}{substring}
-{places[1]}{substring}{substring}
-{substring}{substring}{places[2]}
-   II      I      III   """)
+print(f'''{places[0].rjust(16, ' ')}\n{places[1]}\n{places[2].rjust(24, ' ')}
+   II      I      III''')

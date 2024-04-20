@@ -19,13 +19,10 @@
 # Одно трёхзначное число, которое приведёт к победе.
 
 
-first_number = second_number = '0'
+first_num = input()
+second_num = input()
 
-while int(first_number) not in range(10, 100) or int(second_number) not in range(10, 100):
-    first_number = input()
-    second_number = input()
+digits = sorted(list(first_num + second_num))
+magic_num = digits[3] + str((int(digits[1]) + int(digits[2])) % 10) + digits[0]
 
-digits = sorted(list(first_number + second_number))
-magic_number = digits[3] + str((int(digits[1]) + int(digits[2])) % 10) + digits[0]
-
-print(magic_number)
+print(magic_num)

@@ -18,19 +18,16 @@
 # Результат шифрования
 
 
-while (pass_word := int(input())) not in range(100, 1000):
-    pass
+num = int(input())
+char = []
+char.append(num // 1 % 10)
+char.append(num // 10 % 10)
+char.append(num // 100 % 10)
 
-pass_letter = []
+a = char[2] + char[1]
+b = char[1] + char[0]
 
-pass_letter.append(pass_word // 1 % 10)
-pass_letter.append(pass_word // 10 % 10)
-pass_letter.append(pass_word // 100 % 10)
-
-sypher_a = pass_letter[2] + pass_letter[1]
-sypher_b = pass_letter[1] + pass_letter[0]
-
-if sypher_a > sypher_b:
-    print(sypher_a, sypher_b, sep="")
+if a > b:
+    print(a, b, sep='')
 else:
-    print(sypher_b, sypher_a, sep="")
+    print(b, a, sep='')

@@ -11,18 +11,13 @@
 # Имя игрока, который будет ходить первым.
 
 
-name_1 = name_2 = name_3 = None
-
-while not name_1 or not name_2 or not name_3:
-    name_1 = input()
-    name_2 = input()
-    name_3 = input()
+name_1 = input()
+name_2 = input()
+name_3 = input()
 
 if name_1 <= name_2 and name_1 <= name_3:
-    player = name_1
+    print(name_1)
 elif name_2 <= name_3:
-    player = name_2
+    print(name_2)
 else:
-    player = name_3
-
-print(player)
+    print(name_3)

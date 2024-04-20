@@ -15,13 +15,12 @@
 
 
 dict_list = []
-
-for number in input().split():
-    number_dict = {}
-    number_bin = '{0:b}'.format(int(number))
-    number_dict['digits'] = len(number_bin)
-    number_dict['units'] = number_bin.count('1')
-    number_dict['zeros'] = number_bin.count('0')
-    dict_list.append(number_dict)
+for num in input().split():
+    num_dict = {}
+    num_bin = '{0:b}'.format(int(num))
+    num_dict['digits'] = len(num_bin)
+    num_dict['units'] = num_bin.count('1')
+    num_dict['zeros'] = num_bin.count('0')
+    dict_list.append(num_dict)
 
 print(dict_list)

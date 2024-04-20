@@ -14,12 +14,7 @@
 # YES — если в этой местности есть зайка, иначе — NO.
 
 
-string = None
-
-while not string:
-    string = input()
-
-if "зайка" in string:
+if "зайка" in input():
     print("YES")
 else:
     print("NO")

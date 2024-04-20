@@ -26,5 +26,4 @@ while (inp := input()) != '':
             if pos < (len(objs) - 1):
                 neigbors.add(objs[pos + 1])
 
-for neigbor in neigbors:
-    print(neigbor)
+print('\n'.join(neigbors))

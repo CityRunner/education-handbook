@@ -18,18 +18,13 @@
 # Гарантируется, что победителем стал только один.
 
 
-speed_p = speed_v = speed_t = int()
+pet = int(input())
+vas = int(input())
+tol = int(input())
 
-while speed_p <= 0 or speed_v <= 0 or speed_t <= 0:
-    speed_p = int(input())
-    speed_v = int(input())
-    speed_t = int(input())
-
-if speed_p > speed_v and speed_p > speed_t:
-    winner = "Петя"
-elif speed_v > speed_t:
-    winner = "Вася"
+if pet > vas and pet > tol:
+    print('Петя')
+elif vas > tol:
+    print('Вася')
 else:
-    winner = "Толя"
-
-print(winner)
+    print('Толя')

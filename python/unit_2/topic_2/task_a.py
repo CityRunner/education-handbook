@@ -19,20 +19,12 @@
 #     «Всё наладится!».
 
 
-name = answer = None
+name = input()
+answer = input()
 
-while not name or answer not in ["хорошо", "плохо"]:
-    name = input()
-    answer = input()
+if answer == 'хорошо':
+    message = 'Я за вас рада!'
+elif answer == 'плохо':
+    message = 'Всё наладится!'
 
-if answer == "хорошо":
-    message = "Я за вас рада!"
-else:
-    message = "Всё наладится!"
-
-greeting = (f"""Как Вас зовут?
-Здравствуйте, {name}!
-Как дела?
-{message}""")
-
-print(greeting)
+print(f'Как Вас зовут?\nЗдравствуйте, {name}!\nКак дела?\n{message}')
