@@ -14,7 +14,13 @@
 
 price = 38
 amount = 2.5
+<<<<<<< HEAD
 cash = int(input())
+=======
+cash = 0
+while cash < 100:
+    cash = int(input())
+>>>>>>> 29cca75b9a18b79cee30c2119ec4a583721ede21
 total_cost = price * amount
 change = cash - total_cost
 print(int(change))

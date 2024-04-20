@@ -14,5 +14,9 @@
 repeat = int(input())
 message = input()
 
+<<<<<<< HEAD
 for _ in range(repeat):
+=======
+for count in range(repeat):
+>>>>>>> 29cca75b9a18b79cee30c2119ec4a583721ede21
     print(f'Я больше никогда не буду писать "{message}"!')
