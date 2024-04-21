@@ -25,3 +25,10 @@
 # Выведите одно число — максимальное количество точек, которое Капитан Крюк
 # сможет посетить по маршруту, построенному по описанным правилам.
 
+
+spots = {}
+for _ in range(int(input())):
+    x, y = input().split()
+    index = (int(x) // 10, int(y) // 10)
+    spots[index] = spots.get(index, 0) + 1
+print(max(spots.values()))
