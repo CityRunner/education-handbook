@@ -15,7 +15,7 @@
 
 
 places = []
-racers = ["Петя", "Вася", "Толя"]
+racers = ['Петя', 'Вася', 'Толя']
 speed = [int(), int(), int()]
 
 for index in range(len(speed)):
@@ -35,4 +35,4 @@ while speed and len(places) < 2:
 places.append(racers[0])
 
 for index in range(len(places)):
-    print(f"{index+1}. {places[index]}")
+    print(f'{index+1}. {places[index]}')

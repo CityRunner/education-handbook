@@ -14,14 +14,13 @@
 # Обратите внимание, что в треугольнике любая сторона меньше суммы двух других.
 
 
-tube = []
+t1 = int(input())
+t2 = int(input())
+t3 = int(input())
 
-for i in range(3):
-    tube.append(abs(int(input())))
-
-cases = [tube[0] < tube[1] + tube[2],
-         tube[1] < tube[0] + tube[2],
-         tube[2] < tube[0] + tube[1]]
+cases = [t1 < t2 + t3,
+         t2 < t1 + t3,
+         t3 < t1 + t2]
 
 if all(cases):
     print("YES")

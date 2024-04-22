@@ -12,14 +12,8 @@
 # Одно рациональное число с точностью до сотых.
 
 
-A = B = C = int()
+A = int(input())
+B = int(input())
+C = int(input())
 
-while A <= 0 or B <= 0 or C <= 0:
-    A = int(input())
-    B = int(input())
-    C = int(input())
-
-path = abs(B - A)
-result = round(path / C, 2)
-
-print(result)
+print(round((B - A) / C, 2))

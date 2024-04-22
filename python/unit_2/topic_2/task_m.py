@@ -22,17 +22,17 @@
 # Одна цифра — общая у всех трёх чисел в одинаковой позиции
 
 
-digit = {"elf": [], "dwarf": [], "human": []}
-number = [int(), int(), int()]
+char = {'elf': [], 'dwarf': [], 'human': []}
+num = [int(), int(), int()]
 
-for index in range(len(digit)):
-    while number[index] not in range(10, 100):
-        number[index] = int(input())
+for index in range(len(char)):
+    while num[index] not in range(10, 100):
+        num[index] = int(input())
 
-for specimen in digit:
-    digit[specimen].append(number[list(digit).index(specimen)] // 10 % 10)
-    digit[specimen].append(number[list(digit).index(specimen)] // 1 % 10)
+for spec in char:
+    char[spec].append(num[list(char).index(spec)] // 10 % 10)
+    char[spec].append(num[list(char).index(spec)] // 1 % 10)
 
 for index in range(2):
-    if digit["elf"][index] == digit["dwarf"][index] == digit["human"][index]:
-        print(digit["elf"][index])
+    if char['elf'][index] == char['dwarf'][index] == char['human'][index]:
+        print(char['elf'][index])

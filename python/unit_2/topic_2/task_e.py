@@ -14,19 +14,10 @@
 # Имя ребёнка, у которого больше яблок.
 
 
-pet = 7 - 3 + 2
-vas = 6 + 3 + 5 - 2
-N = M = int()
-
-while (N:= int(input())) <= 0 or (M := int(input())) <= 0:
-    pass
-
-pet += N
-vas += M
+pet = 7 - 3 + 2 + int(input())
+vas = 6 + 3 + 5 - 2 + int(input())
 
 if pet > vas:
-    result = "Петя"
+    print('Петя')
 else:
-    result = "Вася"
-
-print(result)
+    print('Вася')

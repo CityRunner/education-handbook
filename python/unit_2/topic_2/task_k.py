@@ -11,29 +11,26 @@
 # YES — если число красивое, иначе — NO
 
 
-while (number := int(input())) not in range(100, 1000):
-    pass
+num = int(input())
+pos = []
+pos.append(num // 1 % 10)
+pos.append(num // 10 % 10)
+pos.append(num // 100 % 10)
 
-digit_pos = []
+char_sort = []
 
-digit_pos.append(number // 1 % 10)
-digit_pos.append(number // 10 % 10)
-digit_pos.append(number // 100 % 10)
+while pos and len(char_sort) < 2:
+    char_max = 0
+    char_id = 0
+    for ind, char in enumerate(pos):
+        if char >= char_max:
+            char_max = char
+            char_id = ind
+    char_sort.append(pos[char_id])
+    pos.pop(char_id)
+char_sort.append(pos[0])
 
-digit_sort = []
-
-while digit_pos and len(digit_sort) < 2:
-    digit_max = 0
-    digit_id = 0
-    for index in range(len(digit_pos)):
-        if digit_pos[index] >= digit_max:
-            digit_max = digit_pos[index]
-            digit_id = index
-    digit_sort.append(digit_pos[digit_id])
-    digit_pos.pop(digit_id)
-digit_sort.append(digit_pos[0])
-
-if (digit_sort[0] + digit_sort[2]) == digit_sort[1] * 2:
+if (char_sort[0] + char_sort[2]) == char_sort[1] * 2:
     print("YES")
 else:
     print("NO")

@@ -18,12 +18,7 @@
 # Гарантируется, что победителем стал только один.
 
 
-while (speed_p := int(input())) <= 0 or (speed_v := = int(input())) <= 0:
-    pass
-
-if speed_p > speed_v:
-    winner = "Петя"
+if int(input()) > int(input()):
+    print('Петя')
 else:
-    winner = "Вася"
-
-print(winner)
+    print('Вася')

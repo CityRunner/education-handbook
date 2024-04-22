@@ -12,10 +12,7 @@
 # YES если число является палиндромом, иначе — NO.
 
 
-while int(string := input()) not in range(999, 10000):
-    pass
-
-if string == string[::-1]:
+if (string := input()) == string[::-1]:
     print("YES")
 else:
     print("NO")

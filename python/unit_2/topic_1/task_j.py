@@ -22,21 +22,12 @@
 # Кроватка: <номер кроватки>.
 
 
-card = {"name": '',
-        "locker": 0,
-        "group": 0,
-        "id": 0,
-        "bed": 0}
+name = input()
+locker = int(input())
 
-while card["name"] == '' or (card["locker"] not in range(100, 1000)):
-    card["name"] = input()
-    card["locker"] = int(input())
+group = locker // 100
+number = locker % 10
+bed = locker // 10 % 10
 
-card["group"] = card["locker"] // 100
-card["id"] = card["locker"] % 10
-card["bed"] = card["locker"] // 10 % 10
-
-print(f"""Группа №{card["group"]}.
-{card["id"]}. {card["name"]}.
-Шкафчик: {card["locker"]}.
-Кроватка: {card["bed"]}.""")
+print(f'''Группа №{group}.\n{number}. {name}.
+Шкафчик: {locker}.\nКроватка: {bed}.''')

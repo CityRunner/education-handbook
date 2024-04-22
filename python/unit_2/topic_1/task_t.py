@@ -23,15 +23,12 @@
 # Два натуральных числа, записанных через пробел — вес обеих партий котлет.
 
 
-N = M = K1 = K2 = N1 = N2 = int()
+N = int(input())
+M = int(input())
+K1 = int(input())
+K2 = int(input())
 
-while N <= 0 or M <= 0 or K1 <= 0 or K2 <= 0 or K2 > K1:
-    N = int(input())
-    M = int(input())
-    K1 = int(input())
-    K2 = int(input())
-
-N1 = int((N * M - K2 * N) / (K1 - K2))
+N1 = (N * M - K2 * N) // (K1 - K2)
 N2 = N - N1
 
 print(N1, N2)

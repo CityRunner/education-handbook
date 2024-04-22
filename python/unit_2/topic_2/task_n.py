@@ -16,12 +16,7 @@
 # Два защитных числа для каждого отряда, записанные через пробел.
 
 
-number = '0'
-
-while int(number) not in range(100, 1000):
-    number = input()
-
-digits = sorted(list(number))
+digits = sorted(list(input()))
 if digits[0] != '0':
     min_number = digits[0] + digits[1]
 else:
