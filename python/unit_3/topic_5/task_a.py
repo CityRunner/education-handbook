@@ -12,7 +12,5 @@
 
 from sys import stdin
 
-summ = 0
 numbers = stdin.read().rstrip('\n').split()
-
 print(sum([int(n) for n in numbers]))
