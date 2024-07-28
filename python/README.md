@@ -13,9 +13,9 @@ https://education.yandex.ru/handbook/python
 3. :rage2: Коллекции и работа с памятью
     1. [Строки, кортежи, списки](https://github.com/CityRunner/education-handbook/tree/main/python/unit_3/topic_1)
     2. [Множества, словари](https://github.com/CityRunner/education-handbook/tree/main/python/unit_3/topic_2)
-    3. Списочные выражения. Модель памяти для типов языка Python
-    4. Встроенные возможности по работе с коллекциями
-    5. Потоковый ввод/вывод. Работа с текстовыми файлами. JSON
+    3. [Списочные выражения. Модель памяти для типов языка Python](https://github.com/CityRunner/education-handbook/tree/main/python/unit_3/topic_3)
+    4. [Встроенные возможности по работе с коллекциями](https://github.com/CityRunner/education-handbook/tree/main/python/unit_3/topic_4)
+    5. [Потоковый ввод/вывод. Работа с текстовыми файлами. JSON](https://github.com/CityRunner/education-handbook/tree/main/python/unit_3/topic_5)
 4. :rage3: Функции и их особенности в Python
     1. Функции. Области видимости. Передача параметров в функции
     2. Позиционные и именованные аргументы. Функции высших порядков. Лямбда-функции
