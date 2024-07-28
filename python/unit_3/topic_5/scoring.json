@@ -1,0 +1,32 @@
+[
+    {
+        "points": 10,
+        "tests": [
+            {
+                "input": "2 2",
+                "pattern": "4"
+            },
+            {
+                "input": "4 3",
+                "pattern": "7"
+            }
+        ]
+    },
+    {
+        "points": 30,
+        "tests": [
+            {
+                "input": "2 1",
+                "pattern": "3"
+            },
+            {
+                "input": "25 4",
+                "pattern": "29"
+            },
+            {
+                "input": "3 -3",
+                "pattern": "0"
+            }
+        ]
+    }
+]

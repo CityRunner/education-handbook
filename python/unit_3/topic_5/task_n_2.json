@@ -1,0 +1,11 @@
+[
+    {
+        "name": "Ann",
+        "address": "Awesome st.",
+        "phone": "+7 (098) 765-43-21"
+    },
+    {
+        "name": "Bob",
+        "address": "Winter st."
+    }
+]
