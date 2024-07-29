@@ -9,7 +9,6 @@
 # Ваше решение должно содержать только функции.
 # В решении не должно быть вызовов требуемых функций.
 
-
 def can_eat(start, end):
     from itertools import product, chain
     ways = list(product((-1, 1), (-2, 2))) + list(product((-2, 2), (-1, 1)))
