@@ -19,4 +19,5 @@ def month(number, lang):
     return months[lang][number - 1]
 
 
-print(month(int(input()), input()))
+# result = month(1, "en")
+# print(result)

@@ -12,4 +12,5 @@ def number_length(num):
     return len(str(abs(num)))
 
 
-print(number_length(int(input())))
+# result = number_length(12345)
+# print(result)

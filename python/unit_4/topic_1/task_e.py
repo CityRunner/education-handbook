@@ -17,4 +17,5 @@ def split_numbers(num_string):
     return numbers
 
 
-print(split_numbers(input()))
+# result = split_numbers("1 2 3 4 5")
+# print(result)

@@ -14,4 +14,5 @@ def gcd(a, b):
     return b
 
 
-print(gcd(int(input()), int(input())))
+# result = gcd(12, 45)
+# print(result)
