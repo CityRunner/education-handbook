@@ -14,13 +14,13 @@
 def make_matrix(size, value=0):
     from itertools import repeat
     if type(size).__name__ == 'int':
-        return [list(repeat(value, size)) for _ in range(size)]
+        width = height = size
     else:
         width, height = size
-        return [list(repeat(value, width)) for _ in range(height)]
+    return [list(repeat(value, width)) for _ in range(height)]
 
 
-result = make_matrix(3)
-print(result)
-result = make_matrix((4, 2), 1)
-print(result)
+# result = make_matrix(3)
+# print(result)
+# result = make_matrix((4, 2), 1)
+# print(result)

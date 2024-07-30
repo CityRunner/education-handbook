@@ -16,5 +16,6 @@ def make_list(length, value=0):
     from itertools import repeat
     return list(repeat(value, length))
 
+
 # result = make_list(3)
 # print(result)

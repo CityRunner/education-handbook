@@ -17,5 +17,5 @@ def gcd(*args):
     return a
 
 
-result = gcd(36, 48, 156, 100500)
-print(result)
+# result = gcd(36, 48, 156, 100500)
+# print(result)
