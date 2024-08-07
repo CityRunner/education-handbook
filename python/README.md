@@ -17,9 +17,9 @@ https://education.yandex.ru/handbook/python
     4. [Встроенные возможности по работе с коллекциями](https://github.com/CityRunner/education-handbook/tree/main/python/unit_3/topic_4)
     5. [Потоковый ввод/вывод. Работа с текстовыми файлами. JSON](https://github.com/CityRunner/education-handbook/tree/main/python/unit_3/topic_5)
 4. :rage3: Функции и их особенности в Python
-    1. Функции. Области видимости. Передача параметров в функции
-    2. Позиционные и именованные аргументы. Функции высших порядков. Лямбда-функции
-    3. Рекурсия. Декораторы. Генераторы
+    1. [Функции. Области видимости. Передача параметров в функции](https://github.com/CityRunner/education-handbook/tree/main/python/unit_4/topic_1)
+    2. [Позиционные и именованные аргументы. Функции высших порядков. Лямбда-функции](https://github.com/CityRunner/education-handbook/tree/main/python/unit_4/topic_2)
+    3. [Рекурсия. Декораторы. Генераторы](https://github.com/CityRunner/education-handbook/tree/main/python/unit_4/topic_3)
 5. :rage4: Объектно-ориентированное программирование
     1. Объектная модель Python. Классы, поля и методы
     2. Волшебные методы, переопределение методов. Наследование
