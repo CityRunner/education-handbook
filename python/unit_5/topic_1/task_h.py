@@ -61,10 +61,7 @@ class Checkers:
 class Cell:
 
     def __init__(self, state='X'):
-        self.state = state
 
-    def status(self):
-        return self.state
 
 # checkers = Checkers()
 # for row in '87654321':
