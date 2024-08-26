@@ -27,7 +27,7 @@ class Fraction:
                 self.__den = int(__den)
             case 2:
                 self.__num, self.__den = args
-        self.__reduce()
+        self.__normalize()
 
     def __str__(self):
         return f'{self.__num}/{self.__den}'
@@ -45,11 +45,10 @@ class Fraction:
             b = R
         return b
 
-    def __reduce(self):
-        div = self.__gcd()
-        self.__num = int(self.__num / div)
-        self.__den = int(self.__den / div)
-
+    def __normalize(self):
+        gcd = self.__gcd()
+        self.__num //= gcd
+        self.__den //= gcd
         if self.__den < 0:
             self.__num = -self.__num
             self.__den = abs(self.__den)
@@ -61,14 +60,14 @@ class Fraction:
                 self.__num = -number
             else:
                 self.__num = number
-            self.__reduce()
+            self.__normalize()
         else:
             return abs(self.__num)
 
     def denominator(self, number=None):
         if number:
             self.__den = number
-            self.__reduce()
+            self.__normalize()
         else:
             return self.__den
 

@@ -59,9 +59,9 @@ class Fraction:
         return b
 
     def __reduce(self):
-        div = self.__gcd()
-        self.__num = int(self.__num / div)
-        self.__den = int(self.__den / div)
+        gcd = self.__gcd()
+        self.__num //= gcd
+        self.__den //= gcd
 
     def numerator(self, number=None):
         if number:
