@@ -24,13 +24,16 @@ class StartsWithDigitError(Exception):
     pass
 
 
-def username_validation(name):
-    numbers = range(48, 58)
-    lat_num_und = [*range(65, 91), *range(97, 123), *numbers, 95]
-    if type(name) is not str:
+def check_string(arg):
+    if type(arg) is not str:
         raise TypeError
-    if not all(ord(sym) in lat_num_und for sym in name):
+
+
+def username_validation(name):
+    check_string(name)
+    chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_'
+    if not all(char in chars for char in name):
         raise BadCharacterError
-    if any(name.startswith(chr(num)) for num in numbers):
+    if name[0].isdigit():
         raise StartsWithDigitError
     return name

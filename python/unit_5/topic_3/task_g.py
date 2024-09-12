@@ -28,11 +28,17 @@ class CapitalError(Exception):
     pass
 
 
-def name_validation(name):
-    if type(name) is not str:
+def check_string(arg):
+    if type(arg) is not str:
         raise TypeError
-    if not all(ord(letter) in range(1024, 1280) for letter in name):
+
+
+def name_validation(name):
+    check_string(name)
+    chars = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
+    if not all(char in chars for char in name):
         raise CyrillicError
     if not name.istitle():
         raise CapitalError
     return name
+
