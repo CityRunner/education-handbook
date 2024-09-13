@@ -6,7 +6,7 @@
 # чтобы найти корни уравнения.
 
 # Формат ввода
-# Вводится 3 вещественных числа aa, bb, cc — коэффициенты уравнения вида:
+# Вводится 3 вещественных числа a, b, c — коэффициенты уравнения вида:
 # ax2+bx+c=0ax2+bx+c=0.
 
 # Формат вывода
@@ -18,31 +18,21 @@
 # Примечание
 # Обратите внимание, что ограничения на значения коэффициентов отсутствуют.
 
+a, b, c = [float(input()) for _ in range(3)]
 
-a = float(input())
-b = float(input())
-c = float(input())
-
-if a == 0:
-    if b == 0:
-        if c == 0:
-            print("Infinite solutions")
-        else:
-            print("No solution")
-    else:
-        x = round((- c / b), 2)
-        print(x)
+if a == b == c == 0:
+    print("Infinite solutions")
+elif a == b == 0:
+    print("No solution")
+elif a == 0 and b != 0 and c != 0:
+    print(-(c / b))
 else:
     D = b ** 2 - 4 * a * c
-    if D > 0:
-        x1 = round((- b + D ** (1 / 2)) / (2 * a), 2)
-        x2 = round((- b - D ** (1 / 2)) / (2 * a), 2)
-        if x1 < x2:
-            print(x1, x2)
-        else:
-            print(x2, x1)
-    elif D == 0:
-        x = round(- b / (2 * a), 2)
-        print(x)
+    if D == 0:
+        print(-b / (2 * a))
+    elif D > 0:
+        x1 = (-b - D ** 0.5) / (2 * a)
+        x2 = (-b + D ** 0.5) / (2 * a)
+        print(*sorted([x1, x2]))
     else:
         print("No solution")
