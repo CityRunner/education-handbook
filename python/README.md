@@ -21,9 +21,9 @@ https://education.yandex.ru/handbook/python
     2. [Позиционные и именованные аргументы. Функции высших порядков. Лямбда-функции](https://github.com/CityRunner/education-handbook/tree/main/python/unit_4/topic_2)
     3. [Рекурсия. Декораторы. Генераторы](https://github.com/CityRunner/education-handbook/tree/main/python/unit_4/topic_3)
 5. :rage4: Объектно-ориентированное программирование
-    1. Объектная модель Python. Классы, поля и методы
-    2. Волшебные методы, переопределение методов. Наследование
-    3. Модель исключений Python. Try, except, else, finally. Модули
+    1. [Объектная модель Python. Классы, поля и методы](https://github.com/CityRunner/education-handbook/tree/main/python/unit_5/topic_1)
+    2. [Волшебные методы, переопределение методов. Наследование](https://github.com/CityRunner/education-handbook/tree/main/python/unit_5/topic_2)
+    3. [Модель исключений Python. Try, except, else, finally. Модули](https://github.com/CityRunner/education-handbook/tree/main/python/unit_5/topic_3)
 6. :goberserk: Библиотеки для получения и обработки данных
     1. Модули math и numpy
     2. Модуль pandas
