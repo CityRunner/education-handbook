@@ -30,7 +30,7 @@
 
 from math import comb
 
-N, M = map(int, input().split())
-combos = comb(N, M)
-success = comb(N - 1, M - 1)
+specs, seats = map(int, input().split())
+combos = comb(specs, seats)
+success = comb(specs - 1, seats - 1)
 print(success, combos)
