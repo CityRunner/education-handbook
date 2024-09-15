@@ -15,6 +15,6 @@ from math import gcd
 
 gcd_list = []
 for line in stdin:
-    sequences = map(int, line.rstrip('\n').split())
-    gcd_list.append(gcd(*sequences))
+    sequence = map(int, line.rstrip('\n').split())
+    gcd_list.append(gcd(*sequence))
 print('\n'.join(str(number) for number in gcd_list))

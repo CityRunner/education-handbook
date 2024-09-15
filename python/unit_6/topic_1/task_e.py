@@ -18,10 +18,9 @@
 # Дека и Поля живут на одной плоскости с общим центром.
 # ϕ — измеряется в радианах.
 
-from math import cos, sin, sqrt
+from math import cos, sin, dist
 
-des = tuple(map(float, input().split()))
-pol_r, pol_f = map(float, input().split())
-pol_to_des = (pol_r * cos(pol_f), pol_r * sin(pol_f))
-vector = sqrt((pol_to_des[0] - des[0]) ** 2 + (pol_to_des[1] - des[1]) ** 2)
-print(vector)
+cartesian = tuple(map(float, input().split()))
+rho, phi = map(float, input().split())
+polar_to_cartesian = (rho * cos(phi), rho * sin(phi))
+print(dist(cartesian, polar_to_cartesian))
