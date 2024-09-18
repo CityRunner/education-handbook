@@ -15,5 +15,4 @@ import pandas as pd
 def update(journal):
     avg = [journal.values[row, 1:].sum() / 3 for row in range(len(journal))]
     journal = journal.assign(average=avg)
-    # return journal.sort_values(by=['average'], ascending=False).sort_values(by=['name'], ascending=False)
     return journal.sort_values(['average', 'name'], ascending=[False, True])
