@@ -1,38 +1,61 @@
-# Список победителей
+"""
+Список победителей
 
-# Длина трассы — 43872м, и зрители хотят узнать имя победителя.
+Длина трассы — 43872м, и зрители хотят узнать имя победителя.
 
-# Нам известны средние скорости трёх фаворитов – Пети, Васи и Толи. Помогите
-# подвести итоги гонки.
+Нам известны средние скорости трёх фаворитов – Пети, Васи и Толи.
+Помогите подвести итоги гонки.
 
-# Формат ввода
-# В первой строке записана средняя скорость Пети.
-# Во второй — Васи.
-# В третьей — Толи.
+Формат ввода:
+    В первой строке записана средняя скорость Пети.
+    Во второй — Васи.
+    В третьей — Толи.
 
-# Формат вывода
-# Имена победителей в порядке занятых мест.
+Формат вывода:
+    Имена победителей в порядке занятых мест.
 
+Пример 1:
+    Ввод:
+        10
+        5
+        7
+    Вывод:
+        1. Петя
+        2. Толя
+        3. Вася
 
-places = []
-racers = ['Петя', 'Вася', 'Толя']
-speed = [int(), int(), int()]
+Пример 2:
+    Ввод:
+        5
+        7
+        10
+    Вывод:
+        1. Толя
+        2. Вася
+        3. Петя
+"""
 
-for index in range(len(speed)):
-    while speed[index] <= 0:
-        speed[index] = int(input())
+petya = int(input())
+vasya = int(input())
+tolya = int(input())
 
-while speed and len(places) < 2:
-    max_speed = 0
-    racer_id = 0
-    for index in range(len(speed)):
-        if speed[index] >= max_speed:
-            max_speed = speed[index]
-            racer_id = index
-    places.append(racers[racer_id])
-    speed.pop(racer_id)
-    racers.pop(racer_id)
-places.append(racers[0])
+if petya > vasya and petya > tolya:
+    first = 'Петя'
+    if vasya > tolya:
+        second, third = 'Вася', 'Толя'
+    else:
+        second, third = 'Толя', 'Вася'
+elif vasya > petya and vasya > tolya:
+    first = 'Вася'
+    if petya > tolya:
+        second, third = 'Петя', 'Толя'
+    else:
+        second, third = 'Толя', 'Петя'
+elif tolya > petya and tolya > vasya:
+    first = 'Толя'
+    if petya > vasya:
+        second, third = 'Петя', 'Вася'
+    else:
+        second, third = 'Вася', 'Петя'
 
-for index in range(len(places)):
-    print(f'{index+1}. {places[index]}')
+print(f'1. {first}\n2. {second}\n3. {third}')
