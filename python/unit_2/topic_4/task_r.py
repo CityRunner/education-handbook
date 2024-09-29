@@ -1,39 +1,57 @@
-# Новогоднее настроение 2.0
+"""
+Новогоднее настроение 2.0
 
-# Коллеги математика вновь хотят порадовать его и сделать математические ёлки,
-# которые украсят кабинет учёного. Помогите им, написав программу, которая по
-# введённому числу строит математическую ёлку.
+Коллеги математика вновь хотят порадовать его и сделать математические ёлки,
+которые украсят кабинет учёного. Помогите им, написав программу, которая
+по введённому числу строит математическую ёлку.
 
-# Формат ввода
-# Вводится одно натуральное число — количество чисел в математической ёлке.
+Формат ввода:
+    Вводится одно натуральное число — количество чисел в математической ёлке.
 
-# Формат вывода
-# Требуемая новогодня ёлка.
+Формат вывода:
+    Требуемая новогодня ёлка.
 
-# Примечание
-# Не забывайте про существование f-строк.
+Пример 1:
+    Ввод:
+        14
+    Вывод:
+         1
+        2 3
+       4 5 6
+      7 8 9 10
+    11 12 13 14
 
+Пример 2:
+    Ввод:
+        6
+    Вывод:
+        1
+       2 3
+      4 5 6
+"""
 
-user_number = int(input())
-rows = 0
-counter = user_number
-while counter > 0:
-    rows += 1
-    counter -= rows
+num_max = int(input())
 
-strings = []
-string_length = 0
-current_number = 0
+num_last = 0
+for row in range(1, num_max + 1):
+    strng = ''
+    col_last = num_last + row
+    for col in range(num_last + 1, col_last + 1):
+        if col <= num_max:
+            strng += f'{col} '
+            num_last = col
+    width = len(strng)
+    if col_last >= num_max:
+        break
 
-for row in range(rows):
-    string = ''
-    for col in range(row + 1):
-        current_number += 1
-        if current_number <= user_number:
-            string += str(current_number) + ' '
-    if len(string) >= string_length:
-        string_length = len(string)
-    strings.append(string)
-
-for string in strings:
-    print(f'{string: ^{string_length}}')
+num_last = 0
+for row in range(1, num_max + 1):
+    strng = ''
+    col_last = num_last + row
+    for col in range(num_last + 1, col_last + 1):
+        if col <= num_max:
+            strng += f'{col} '
+            num_last = col
+    print(f'{strng: ^{width}}')
+    if col_last >= num_max:
+        break
