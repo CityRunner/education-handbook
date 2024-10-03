@@ -22,7 +22,7 @@ Example 2:
 """
 
 rle = [('a', 2), ('b', 3), ('c', 1)]
-print(''.join([letter * count for letter, count in rle]))
+print(''.join([char * count for char, count in rle]))
 
 # Expression:
-# ''.join([letter * count for letter, count in rle])
+# ''.join([char * count for char, count in rle])
