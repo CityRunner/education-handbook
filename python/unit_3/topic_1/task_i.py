@@ -33,5 +33,5 @@
 
 while (string := input()) != '':
     if not string.startswith('#'):
-        pos = string.find('#')
-        print(string[:pos].rstrip() if pos >= 0 else string)
+        hashtag = string.find('#')
+        print(string[:hashtag].rstrip() if hashtag else string)
