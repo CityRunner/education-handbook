@@ -25,6 +25,6 @@ https://education.yandex.ru/handbook/python
     2. [Волшебные методы, переопределение методов. Наследование](https://github.com/CityRunner/education-handbook/tree/main/python/unit_5/topic_2)
     3. [Модель исключений Python. Try, except, else, finally. Модули](https://github.com/CityRunner/education-handbook/tree/main/python/unit_5/topic_3)
 6. :goberserk: Библиотеки для получения и обработки данных
-    1. Модули math и numpy
-    2. Модуль pandas
-    3. Модуль requests
+    1. [Модули math и numpy](https://github.com/CityRunner/education-handbook/tree/main/python/unit_6/topic_1)
+    2. [Модуль pandas](https://github.com/CityRunner/education-handbook/tree/main/python/unit_6/topic_2)
+    3. [Модуль requests](https://github.com/CityRunner/education-handbook/tree/main/python/unit_6/topic_3)
