@@ -1,5 +1,28 @@
-# Хендбуки
+# Хендбук Основы Python
 
-https://education.yandex.ru/handbook
-
-- [Основы Python](https://github.com/CityRunner/education-handbook/tree/main/python)
+1. :suspect: Введение
+    1. ~~Как устроен хендбук~~
+    2. ~~Введение~~
+2. :rage1: Базовые конструкции Python
+    1. [Ввод и вывод данных. Операции с числами, строками. Форматирование](https://github.com/CityRunner/education-handbook/tree/main/unit_2/topic_1)
+    2. [Условный оператор](https://github.com/CityRunner/education-handbook/tree/main/unit_2/topic_2)
+    3. [Циклы](https://github.com/CityRunner/education-handbook/tree/main/unit_2/topic_3)
+    4. [Вложенные циклы](https://github.com/CityRunner/education-handbook/tree/main/unit_2/topic_4)
+3. :rage2: Коллекции и работа с памятью
+    1. [Строки, кортежи, списки](https://github.com/CityRunner/education-handbook/tree/main/unit_3/topic_1)
+    2. [Множества, словари](https://github.com/CityRunner/education-handbook/tree/main/unit_3/topic_2)
+    3. [Списочные выражения. Модель памяти для типов языка Python](https://github.com/CityRunner/education-handbook/tree/main/unit_3/topic_3)
+    4. [Встроенные возможности по работе с коллекциями](https://github.com/CityRunner/education-handbook/tree/main/unit_3/topic_4)
+    5. [Потоковый ввод/вывод. Работа с текстовыми файлами. JSON](https://github.com/CityRunner/education-handbook/tree/main/unit_3/topic_5)
+4. :rage3: Функции и их особенности в Python
+    1. [Функции. Области видимости. Передача параметров в функции](https://github.com/CityRunner/education-handbook/tree/main/unit_4/topic_1)
+    2. [Позиционные и именованные аргументы. Функции высших порядков. Лямбда-функции](https://github.com/CityRunner/education-handbook/tree/main/unit_4/topic_2)
+    3. [Рекурсия. Декораторы. Генераторы](https://github.com/CityRunner/education-handbook/tree/main/unit_4/topic_3)
+5. :rage4: Объектно-ориентированное программирование
+    1. [Объектная модель Python. Классы, поля и методы](https://github.com/CityRunner/education-handbook/tree/main/unit_5/topic_1)
+    2. [Волшебные методы, переопределение методов. Наследование](https://github.com/CityRunner/education-handbook/tree/main/unit_5/topic_2)
+    3. [Модель исключений Python. Try, except, else, finally. Модули](https://github.com/CityRunner/education-handbook/tree/main/unit_5/topic_3)
+6. :goberserk: Библиотеки для получения и обработки данных
+    1. [Модули math и numpy](https://github.com/CityRunner/education-handbook/tree/main/unit_6/topic_1)
+    2. [Модуль pandas](https://github.com/CityRunner/education-handbook/tree/main/unit_6/topic_2)
+    3. [Модуль requests](https://github.com/CityRunner/education-handbook/tree/main/unit_6/topic_3)
